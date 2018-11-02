@@ -1,0 +1,25 @@
+{
+  "name": "warna720/bokio",
+  "description": "A simple API for creating book records on bokio.se",
+  "type": "library",
+  "license": "GPL-3.0-or-later",
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.1",
+    "nesk/puphpeteer": "^1.4"
+  },
+
+  "autoload": {
+    "psr-4": {
+        "warna720\\Bokio\\": "src/"
+    }
+  },
+  
+  "extra": {
+    "laravel": {
+      "providers": [
+          "warna720\\Bokio\\BokioServiceProvider"
+      ]
+    }
+  }
+}
