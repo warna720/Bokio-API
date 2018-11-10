@@ -79,6 +79,8 @@ class Bokio
             ->querySelector('input[id="uploadFile"]')
             ->uploadFile($document_path);
 
+        while ($this->page->querySelector('button[data-testid="BokkeepingCategoryStep_Button_Save"]') == null) {}
+
         return $this;
     }
 }
