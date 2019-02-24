@@ -68,7 +68,8 @@ class Bokio
         $this->page->type('input[name="userName"]', $email);
         $this->page->type('input[name="password"]', $password);
         $this->page->click('button[type=submit]');
-        $this->page->waitForNavigation();
+        
+        sleep(5);
 
         return $this;
     }
